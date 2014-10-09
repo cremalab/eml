@@ -61,3 +61,45 @@ Example:
 ```
 
 Principles used for modules also apply to layouts, but we distinguish them from modules for the sake of clarity. There will inevitably be a very limited number of layouts as compared to modules. This is a good thing.
+
+## Naming Conventions
+
+### Modules
+
+Modules are given a name with camel case formatting.
+
+```
+.moduleName
+  background red
+  border-radius .2em
+```
+
+### Submodules
+
+Submodules must be prefixed with it's parent module name and separated by a hyphen.
+
+```
+.moduleName-header
+  font-size 3em
+  color green
+```
+
+### Modifiers
+
+Modifiers can change modules or submodules based off of a given state.
+
+```
+.moduleName-header.is-active
+  display block
+```
+
+### Subclasses
+
+Subclasses can change modules or submodules
+
+```
+.moduleName.huge
+  font-size 10em
+.moduleName-header.wrap
+  white-space wrap
+```
