@@ -5,19 +5,19 @@ EML stands for 'elements, modules, layouts'. All UI structures can be classified
 The EML directory structure looks like this (though, EML is primarily concerned with Components):
 ```JS
 styles
-  |- 00-library
-  |- 01-config
+  |- 00-config
+  |- 01-utility
   |- 02-components
       |- 00-elements
       |- 01-modules
       |- 02-layouts
 ```
 
-## Library
-Library contains any third-party party dependancies.
-
 ## Config
-Config is where all global variables are defined in addition to any plugin configuration.
+Configuration files (e.g. grid system, heading scale, etc.).
+
+## Utility
+Config is where all global utility classes are defined.
 
 ## Components
 
