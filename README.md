@@ -34,6 +34,18 @@ Config is where all global utility classes are defined.
 <div class='large'></div> // single-selector custom element
 ```
 
+### Initial Build
+Here's a copy/paste snippet that can be used to help build out this basic directory strutcture:
+
+```
+mkdir 00-config 01-utility 02-components 02-components/00-elements 02-components/01-modules 02-components/02-layouts
+touch 00-config/_colors.styl
+touch 01-utility/_helpers.styl
+touch 02-components/00-elements/_button.styl
+touch 02-components/01-modules/_header.styl
+touch 02-components/02-layouts/_modal.styl
+```
+
 ### Modules
 **Modules** are reusable custom chunks of UI. These will typically consist of a single name-spaced wrapping element (e.g. `.project`) and will contain child structures (e.g. `.project-header`, `.project-body`, `.project-footer`) which house **elements** or other **modules**.
 
